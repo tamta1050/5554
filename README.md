@@ -1,22 +1,35 @@
-# OrangeHRM Automation Project 
-Project Overview:
-The OrangeHRM Automation Project is developed to test the functionalities of the OrangeHRM application through both manual testing methodologies and Selenium-based automation. By adopting the Page Object Model (POM) design pattern, the project ensures maintainability, readability, and scalability of the test scripts.
+# OrangeHRM Automation Project
+
+Project Overview
+The OrangeHRM Automation Project is a team effort to test the functionalities of the OrangeHRM application through both manual testing methodologies and Selenium-based automation. The project employs the Page Object Model (POM) design pattern to enhance the maintainability and scalability of the test scripts.
+
+This project is a collaborative effort by Rohit, Satyajit, and Vikas, each contributing their expertise to different areas of the project.
 
 # Project Structure
-  
+
 1. Manual Testing
-The manual testing phase involves creating detailed test scenarios and cases to verify application behavior. The documentation includes:
+Led by Satyajit
+Comprehensive manual testing was conducted to validate the application's functionality. Key activities include:
+Developing detailed test scenarios and cases.
+Documenting test cases with:
+Prerequisites
+Test Data
+Steps to Execute
+Expected Results
 
-- Prerequisites: Conditions that must be met before testing.
-- Test Data: Specific data required for testing scenarios.
-- Steps to Execute: Clear instructions for test execution.
-- Expected Results: Anticipated behavior or outcome after execution.
+3. Automation Testing
+Led by Rohit
+A robust automation framework was designed and implemented using modern tools and techniques. The framework includes:
+Java: Programming language for test scripts.
+Selenium WebDriver: For browser automation.
+Page Object Model (POM): To organize and maintain test scripts efficiently.
+TestNG: For test execution and reporting.
+Maven: For build and dependency management.
 
-2. Automation Testing
-The automation framework is built using modern tools and technologies, including:
+5. Mind Mapping and Support
+Led by Vikas
+Vikas contributed by creating a comprehensive mind map to outline the project's scope and workflow. Additionally, Vikas provided support to both manual and automation testing efforts, ensuring smooth execution and collaboration.
 
-- Java: Programming language for implementing the test scripts.
-- Selenium WebDriver: A robust browser automation tool.
-- Page Object Model (POM): A design pattern to separate the test logic from UI element locators for better reusability and maintenance.
-- TestNG: A test execution framework for organizing, running, and reporting test results.
-- Maven: A build automation and dependency management tool for efficient project management.
+![image](https://github.com/user-attachments/assets/330a18f6-42ec-4ecd-9e11-656c82854a3a)
+
+
