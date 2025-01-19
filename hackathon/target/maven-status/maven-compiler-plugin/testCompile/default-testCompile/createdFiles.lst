@@ -1,0 +1,5 @@
+pageObject\dashboardPage.class
+testScript\loginTest.class
+pageObject\loginPage.class
+testScript\EmployeeManagementTest.class
+pageObject\PIMPage.class
