@@ -1,6 +1,7 @@
 # OrangeHRM Automation Project
 
 Project Overview
+
 The OrangeHRM Automation Project is a team effort to test the functionalities of the OrangeHRM application through both manual testing methodologies and Selenium-based automation. The project employs the Page Object Model (POM) design pattern to enhance the maintainability and scalability of the test scripts.
 
 This project is a collaborative effort by Rohit, Satyajit, and Vikas, each contributing their expertise to different areas of the project.
