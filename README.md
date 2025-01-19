@@ -27,7 +27,7 @@ Steps to Execute
 
 Expected Results
 
-3. Automation Testing
+2. Automation Testing
 Led by Rohit
 
 A robust automation framework was designed and implemented using modern tools and techniques.
@@ -44,10 +44,11 @@ TestNG: For test execution and reporting.
 
 Maven: For build and dependency management.
 
-5. Mind Mapping and Support
+3. Mind Mapping and Support
 Led by Vikas
 
 Vikas contributed by creating a comprehensive mind map to outline the project's scope and workflow.
+
 Additionally, Vikas provided support to both manual and automation testing efforts, ensuring smooth execution and collaboration.
 
 ![image](https://github.com/user-attachments/assets/330a18f6-42ec-4ecd-9e11-656c82854a3a)
