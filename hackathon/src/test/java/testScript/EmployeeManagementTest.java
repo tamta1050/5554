@@ -48,7 +48,7 @@ public class EmployeeManagementTest {
         PIMPage.enterEmployeeFirstName("James");
         PIMPage.enterEmployeeLastName("Bond");
         PIMPage.createLoginDetailsBox();
-        PIMPage.enterEmployeeUsername("james28190");
+        PIMPage.enterEmployeeUsername("james290");
         PIMPage.enterEmployeePassword("Password123");
         PIMPage.enterConfirmEmployeePassword("Password123");
         PIMPage.submitEmployeeForm();
@@ -73,7 +73,7 @@ public class EmployeeManagementTest {
         PIMPage.ClickEmployeeMenu();
         
         // Locate employee (assuming there's a search method or employee ID)
-        PIMPage.EnterEmployeeName("james28190");
+        PIMPage.EnterEmployeeName("james");
 
         // Edit employee details
         PIMPage.ClickSearchButton();
