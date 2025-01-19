@@ -22,7 +22,7 @@ public class PIMPage {
     @FindBy(xpath = "//input[@name=\"firstName\"]")
     WebElement firstNameField;
 
-    @FindBy(xpath = "//input[@name='lastName']")
+    @FindBy(xpath = "//input[@name='lastName']") 
     WebElement lastNameField;
     
     @FindBy(xpath = "//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
@@ -44,16 +44,16 @@ public class PIMPage {
     WebElement saveButton;
 
     // Employee List //
-    @FindBy(xpath = "//a[normalize-space()='Employee List']")
+    @FindBy(xpath = "//a[normalize-space()='Employee List']") 
     WebElement EmployeeList;
     
     // Employee Name Search //
-    @FindBy(xpath="(//input[@placeholder='Type for hints...'])[1]")
+    @FindBy(xpath="(//input[@placeholder='Type for hints...'])[1]") 
     WebElement EmployeeName;
     
     // Employee Search Button //
     
-    @FindBy(xpath="//button[normalize-space()='Search']") 
+    @FindBy(xpath="//button[normalize-space()='Search']")   
     WebElement SearchButton;
     
     // Employee Edit Button //
@@ -77,6 +77,12 @@ public class PIMPage {
 
     @FindBy(xpath = "//div[@class='message success']")
     WebElement successMessage;
+    
+    @FindBy(xpath="//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/div[9]/div[1]/button[2]/i[1]")
+    WebElement Deletelogo;
+    
+    @FindBy(xpath="//button[normalize-space()='Yes, Delete']")
+    WebElement DeleteConfirm;
 
     // Constructor to initialize the Page Factory elements
     public PIMPage(WebDriver drive) {
@@ -126,13 +132,14 @@ public class PIMPage {
     // Verify if employee was added successfully
     public boolean isEmployeeAdded(String employeeName) {
         try {
-            // Try to find the employee in the employee list using XPath (or a different selector)
-            WebElement employee = driver.findElement(By.xpath("//h6[normalize-space()='James Bond']"));
+            // Use dynamic XPath to locate the employee based on the provided name
+            WebElement employee = driver.findElement(By.xpath("//h6[normalize-space()='" + employeeName + "']"));
             return employee.isDisplayed(); // Check if the employee is visible
         } catch (NoSuchElementException e) {
-            return false; // If the employee is not found, return false
+            return false; // Return false if the employee is not found
         }
     }
+
     
    
     
@@ -144,6 +151,16 @@ public class PIMPage {
     // Search for an employee by name
     public void EnterEmployeeName(String Name) {
     	EmployeeName.sendKeys(Name);
+    }
+    
+    // Delete Logo
+    public void ClickDeletelogo() {
+    	Deletelogo.click();
+    }
+    
+    // Confirm Delete
+    public void ClickDeleteConfirm() {
+    	DeleteConfirm.click();
     }
     
     public void ClickSearchButton() {

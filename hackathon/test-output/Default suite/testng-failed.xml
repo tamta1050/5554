@@ -6,8 +6,8 @@
       <class name="testScript.EmployeeManagementTest">
         <methods>
           <include name="setup"/>
+          <include name="DeleteEmployeeTest"/>
           <include name="logout"/>
-          <include name="editEmployeeTest"/>
         </methods>
       </class> <!-- testScript.EmployeeManagementTest -->
     </classes>
