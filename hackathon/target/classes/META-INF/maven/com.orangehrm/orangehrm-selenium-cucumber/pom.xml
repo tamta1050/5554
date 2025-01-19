@@ -11,10 +11,11 @@
     <dependencies>
         <!-- Selenium WebDriver Dependency -->
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.10.0</version>
-        </dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.12.0</version>
+</dependency>
+
 
         <!-- WebDriverManager Dependency for automatic driver management -->
         <dependency>

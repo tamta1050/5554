@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScript.loginTest">
+      <class name="testScript.leaveManagementTest">
         <methods>
-          <include name="invalid_login"/>
-          <include name="loginAttemptsExceeds"/>
-          <include name="valid_login"/>
+          <include name="ApplyingLeave"/>
           <include name="setup"/>
-          <include name="loginWithoutDetails"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testScript.loginTest -->
+      </class> <!-- testScript.leaveManagementTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
