@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScript.EmployeeManagementTest">
+      <class name="testScript.leaveManagementTest">
         <methods>
+          <include name="ApplyLeave"/>
           <include name="setup"/>
-          <include name="DeleteEmployeeTest"/>
-          <include name="logout"/>
         </methods>
-      </class> <!-- testScript.EmployeeManagementTest -->
+      </class> <!-- testScript.leaveManagementTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

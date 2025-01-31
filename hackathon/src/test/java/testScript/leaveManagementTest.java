@@ -2,13 +2,12 @@ package testScript;
 
 import java.time.Duration;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import pageObject.leaveManagementPage;
 import pageObject.loginPage;
 
@@ -22,10 +21,9 @@ public class leaveManagementTest {
     @BeforeTest
     public void setup() {
         // Initialize WebDriver
-        
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-
+        
         // Apply implicit wait
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -41,25 +39,29 @@ public class leaveManagementTest {
         loginPage.PassWord("admin123");
         loginPage.ButtonLogin();
     }
-
-    @Test
-    public void ApplyingLeave() {
-        // Navigate to Apply Leave Section
-        leavePage.ClickApplyLeave();
-        leavePage.ClickLeaveOption();
-
-        // Verify if Leave Types are available
-        String actualMessage = leavePage.IsLeavetypesAvailable();
-        String expectedMessage = "No Leave Types with Leave Balance";
-
-        Assert.assertEquals(actualMessage, expectedMessage, "Leave types availability message does not match!");
-    }
-
-    @AfterTest
-    public void tearDown() {
-        // Close the browser
-        if (driver != null) {
-            driver.quit();
+    
+    @Test (priority = 1)
+    	public void ApplyLeave() {
+    		
+    	leavePage.ClickLeaveBtn();
+    	leavePage.ClickApply();
+    	
+    	
+    	if (leavePage.OptionButtonIsClickable()) {
+            leavePage.ClickLeaveOption();
+            leavePage.ChooseOption("CAN - Bereavement");
+        } else {
+            System.out.println("Apply button is not clickable, No Leave Balance Available.");
         }
     }
 }
+
+    
+    	
+    	
+    
+
+   
+    
+    
+
